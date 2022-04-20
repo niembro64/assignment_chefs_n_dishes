@@ -14,10 +14,8 @@ namespace assignment_chefs_n_dishes.Models
     [Required]
     public string LastName { get; set; }
     [Required]
-    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
     [CustomValidation(typeof(CustomValidationMethods), nameof(CustomValidationMethods.PastDate))]
     [CustomValidation(typeof(CustomValidationMethods), nameof(CustomValidationMethods.Not18))]
-    public DateTime Date { get; set; }
     public DateTime Birthday { get; set; }
 
     // navigation property

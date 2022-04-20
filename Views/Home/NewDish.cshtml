@@ -5,5 +5,36 @@
 
 <div class="d-flex flex-column align-items-center">
   <h1>New Dish</h1>
+  <form action="/dishes/create" method="post">
+    <div class="form-group">
+      <label for="Name">Name</label>
+      <input asp-for="Name" class="form-control">
+      <span asp-validation-for="Name"></span>
+    </div>
+    <div class="form-group">
+      <label for="Calories">Calories</label>
+      <input asp-for="Calories" class="form-control">
+      <span asp-validation-for="Calories"></span>
+    </div>
+    <div class="form-group">
+      <label for="Tastiness">Tastiness</label>
+      <input asp-for="Tastiness" class="form-control">
+      <span asp-validation-for="Tastiness"></span>
+    </div>
+    <div class="form-group">
+      <label for="Description">Description</label>
+      <input asp-for="Description" class="form-control">
+      <span asp-validation-for="Description"></span>
+    </div>
+    <div class="form-group">
+      <label for="ChefId">ChefId</label>
+      <input asp-for="ChefId" class="form-control">
+      <span asp-validation-for="ChefId"></span>
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Submit" class="btn btn-primary">
+    </div>
+  </form>
+
 
 </div>
