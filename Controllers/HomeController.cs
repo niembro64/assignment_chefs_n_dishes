@@ -30,21 +30,29 @@ namespace assignment_chefs_n_dishes.Controllers
     [HttpGet("/chefs")]
     public IActionResult Chefs()
     {
+      ViewBag.AllChefs = _context.Chefs.OrderBy(a => a.FirstName).ToList();
+      ViewBag.AllDishes = _context.Dishes.OrderBy(a => a.Name).ToList();
       return View();
     }
     [HttpGet("/dishes")]
     public IActionResult Dishes()
     {
+      ViewBag.AllChefs = _context.Chefs.OrderBy(a => a.FirstName).ToList();
+      ViewBag.AllDishes = _context.Dishes.OrderBy(a => a.Name).ToList();
       return View();
     }
     [HttpGet("/chefs/new")]
     public IActionResult NewChef()
     {
+      ViewBag.AllChefs = _context.Chefs.OrderBy(a => a.FirstName).ToList();
+      ViewBag.AllDishes = _context.Dishes.OrderBy(a => a.Name).ToList();
       return View();
     }
     [HttpGet("/dishes/new")]
     public IActionResult NewDish()
     {
+      ViewBag.AllChefs = _context.Chefs.OrderBy(a => a.FirstName).ToList();
+      ViewBag.AllDishes = _context.Dishes.OrderBy(a => a.Name).ToList();
       return View();
     }
 

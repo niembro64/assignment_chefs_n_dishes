@@ -6,4 +6,8 @@
 
 <div class="d-flex flex-column align-items-center">
 <h1>View Dishes</h1>
+@foreach (Dish d in @ViewBag.AllDishes)
+{
+    <p>@d.Name @d.ChefId</p>
+}
 </div>
