@@ -58,3 +58,7 @@ C:\Users\nieme\Documents\CodingDojo\CSharpStack2022\2.5\assignment_chefs_n_dishe
 C:\Users\nieme\Documents\CodingDojo\CSharpStack2022\2.5\assignment_chefs_n_dishes\obj\Debug\netcoreapp3.1\assignment_chefs_n_dishes.dll
 C:\Users\nieme\Documents\CodingDojo\CSharpStack2022\2.5\assignment_chefs_n_dishes\obj\Debug\netcoreapp3.1\assignment_chefs_n_dishes.pdb
 C:\Users\nieme\Documents\CodingDojo\CSharpStack2022\2.5\assignment_chefs_n_dishes\obj\Debug\netcoreapp3.1\assignment_chefs_n_dishes.genruntimeconfig.cache
+C:\Users\nieme\Documents\CodingDojo\CSharpStack2022\2.5\assignment_chefs_n_dishes\obj\Debug\netcoreapp3.1\Razor\Views\Home\Dishes.cshtml.g.cs
+C:\Users\nieme\Documents\CodingDojo\CSharpStack2022\2.5\assignment_chefs_n_dishes\obj\Debug\netcoreapp3.1\Razor\Views\Home\NewChef.cshtml.g.cs
+C:\Users\nieme\Documents\CodingDojo\CSharpStack2022\2.5\assignment_chefs_n_dishes\obj\Debug\netcoreapp3.1\Razor\Views\Home\NewDish.cshtml.g.cs
+C:\Users\nieme\Documents\CodingDojo\CSharpStack2022\2.5\assignment_chefs_n_dishes\obj\Debug\netcoreapp3.1\Razor\Views\Home\Chefs.cshtml.g.cs
