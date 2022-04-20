@@ -34,7 +34,8 @@ namespace assignment_chefs_n_dishes.Models
 
     public static ValidationResult Not18(DateTime date)
     {
-      return DateTime.Compare(date, DateTime.Today) > 0 ? new ValidationResult("Must be at least 18") : ValidationResult.Success;
+      DateTime today = DateTime.Today;
+      return DateTime.Compare(date, DateTime.Today.AddYears(-18)) > 0 ? new ValidationResult("Must be at least 18") : ValidationResult.Success;
     }
   }
 }
