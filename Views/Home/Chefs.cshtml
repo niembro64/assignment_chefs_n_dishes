@@ -6,8 +6,44 @@
 
 <div class="d-flex flex-column align-items-center">
 <h1>View Chefs</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>ChefId</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>Birthday</th>
+      <th>Dishes</th>
+    </tr>
+  </thead>
+  <tbody>
+
 @foreach (Chef c in @ViewBag.AllChefs)
 {
-    <p>@c.FirstName @c.LastName</p>
+
+    <tr>
+      <th>@c.ChefId</th>
+      <th>@c.FirstName</th>
+      <th>@c.LastName</th>
+      <th>@c.Birthday</th>
+      <th>
+          @foreach (
+               Dish d in @ViewBag.AllDishes)
+          {
+              @if (d.ChefId == c.ChefId)
+              {
+                  
+              <p>
+              <span>@d.Name</span>
+              <span>@d.ChefId</span>
+              </p>
+              }
+          }
+          
+        </th>
+
+    </tr>
 }
 </div>
+  </tbody>
+</table>
